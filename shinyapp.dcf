@@ -1,0 +1,9 @@
+name: shinyapp
+account: scalimur
+server: shinyapps.io
+appId: 122617
+bundleId: 542909
+url: https://scalimur.shinyapps.io/shinyapp/
+when: 1472411978.4878
+asMultiple: FALSE
+asStatic: FALSE
