@@ -1,0 +1,59 @@
+Developing Data Products - Course Project
+========================================================
+author: Joel Calixto Murcia
+date:  28/08/2016
+autosize: true
+transition:rotate
+transition-speed:slow
+
+MtCars Explorer
+========================================================
+
+This presentation was created as part of project for Developing Data Products course.
+
+The assignement is request for to practice with shiny app, R-presentation or slidify
+
+ - shiny app build
+ - R presentation for this work
+
+The Application
+========================================================
+
+The app contains two widgets for choices var and plot type for explore data in Mtcars data set
+
+Data set contains eleven var from each you can choice one for explore data 
+
+And a choice plot for combinate explore.
+
+From this way you can plotter, check summary, a test of single model and check a preview of data from this.
+
+This app has been developed and deployed in <https://scalimur.shinyapps.io/shinyapp/>
+
+The source code is allocate in <https://github.com/scalimur13/Developing-Data-Products>
+
+Dataset Mtcars
+========================================================
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+You can explore data , next show a preview
+```{r, echo=FALSE}
+  str(mtcars)
+  head(mtcars,10)
+```
+
+Dataset Plot and modeling
+========================================================
+Here we can see a plot examples that you can make in this app por compare data for each var.
+
+
+```{r, echo=FALSE}
+par(mfrow=c(2,2))
+plot(mtcars$mpg, main="Lines Plot",
+           col="purple",
+           type="p")
+plot(mtcars$disp, main="Lines Plot",
+           col="light blue",
+           type="l")
+hist(mtcars$wt, main="Histogram of mtcars variables")
+```
